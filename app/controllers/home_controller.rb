@@ -6,8 +6,11 @@ class HomeController < ApplicationController
     @alunos = Aluno.all
 
     render json: {
-      mensagem: " Bem vindo a API stimulus"
-    }
+      mensagem: " Bem vindo a API stimulus",
+       enpoints: [
+        "/alunos"
+       ]
+    } 
   end
 
 end
